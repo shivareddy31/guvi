@@ -1,0 +1,74 @@
+1. PRINT ODD NUMBERS IN AN ARRAY
+ var arr=[1,2,3,4,5]
+    var oddarray=[]
+var odd=()=>{
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]%2!=0){
+            oddarray.push(arr[i])
+        }
+    }
+    return oddarray;
+    
+}
+  
+console.log(odd());//[1,3,5]
+
+2.Convert all the strings to title caps in a string array
+
+ var arr=["ab","bc","cd"]
+    var tcarr=[];
+    var title =()=>{
+        for(var i=0;i<arr.length;i++){
+            arr[i]=arr[i].charAt(0).toUpperCase()+arr[i].slice(i+1)
+            tcarr.push(arr[i])
+        }
+        return tcarr;
+    }
+   console.log( title())//[Ab,Bc,Cd]
+
+3. SUM OF ALL NUMBERS IN AN ARRAY
+ var arr=[1,2,3]
+   var sum=0
+   var add=()=>{
+       for(var i=0;i<arr.length;i++){
+           sum=sum+arr[i]
+       }
+       return sum
+   };
+   console.log(add())//6
+
+4.Print all primes in an array 
+var arr=[1,2,3,4,5]
+   var prime=()=>{
+        array = new Array();
+        for (var i = 2; i <= arr.length; i++) {
+            for(var j = 2; j < i; j++){
+                if(i % j==0){break; }
+                array.push(i);
+            }
+
+        }
+    return array;
+   }
+ console.log( prime())//[1,3,5]
+
+5.PALINDROME or NOT
+ var str="abba"
+    
+var palindrome= ()=> {
+
+    let i = 0;
+    let j = str.length - 1;
+    while(i < j) {
+        if(str[i] == str[j]) {
+            i++; 
+            j--;
+        }
+        else {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(palindrome())//true	
+
