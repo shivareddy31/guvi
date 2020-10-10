@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9fde5da09f.js" crossorigin="anonymous"></script>
+    <style>
+        .input-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 0px;
+            background: dodgerblue;
+            color: white;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        form {
+            display: table;
+        }
+        
+        .input-container {
+            display: table-row;
+        }
+        
+        label {
+            display: table-cell;
+            padding-bottom: 10px;
+            padding-right: 200px;
+        }
+        
+        input {
+            display: table-cell;
+        }
+        
+        .container {
+            background-color: rgb(196, 186, 186);
+            margin-right: 500px;
+            margin-left: 300px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .button {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/" method="GET">
+            <div class="input-container">
+                <label for="fullname">Full name:</label>
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="fullname" placeholder="fullname" required name="fullname">
+            </div>
+            <div class="input-container">
+                <label for="Addressline1">Address line 1:</label>
+                <i class="far fa-address-book icon"></i>
+                <input type="text" id="Addressline1" placeholder="Address line1" required name="address 1">
+            </div>
+            <div class="input-container">
+                <label for="Addressline2">Address line 2:</label>
+                <i class="far fa-address-book icon"></i>
+                <input type="text" id="Addressline2" placeholder="Address line2" required name="address 2">
+            </div>
+            <div class="input-container">
+                <label for="City">City:</label>
+                <i class="far fa-building icon"></i>
+                <input type="text" id="City" placeholder="City" required name="City">
+            </div>
+            <div class="input-container">
+                <label for="state">State/Province :</label>
+                <i class="fas fa-map-marker-alt icon"></i>
+                <input type="text" id="state" placeholder="state/province" required name="state">
+            </div>
+            <div class="input-container">
+                <label for="Postalcode">Postal code/Zip:</label>
+                <i class="far fa-envelope-open icon"></i>
+                <input type="number" id="Postalcode" placeholder="Postalcode" required name="Postalcode">
+            </div>
+            <div class="input-container">
+                <label for="country">Country:</label>
+                <i class="fas fa-map icon"></i>
+                <input type="text" id="Country" placeholder="Country" required name="Country">
+            </div>
+            <div class="input-container">
+                <label for="E-mail">E-mail:</label>
+                <i class="fas fa-user icon"></i>
+                <input type="email" id="E-mail" placeholder="E-mail" required name="E-mail">
+            </div>
+            <div class="input-container">
+                <label for="Phone-Number">Phone-Number:</label>
+                <i class="fas fa-user icon"></i>
+                <input type="number" id="Phone-Number" placeholder="Phone-Number" required name="Phone-Number">
+            </div>
+            <div class="button">
+                <button id="button" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script>
+        var s = document.getElementById("button")
+        s.addEventListener("click", function() {
+            alert("submitted")
+        })
+    </script>
+</body>
+
+</html>
