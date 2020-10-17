@@ -74,7 +74,7 @@ let $col1 = elemCreate('DIV', ['col-12'])
 
 
 let $head = document.createElement('P')
-$head.innerText = "Weather & Countries";
+$head.innerText = "Weather Report";
 $head.style.fontSize = "3rem"
 $head.style.textAlign = 'center'
 $head.style.color = '#FFFAFA'
