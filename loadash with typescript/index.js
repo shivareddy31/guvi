@@ -61,7 +61,7 @@ var delay = function (fn, wait) {
 };
 delay(function (text) {
     console.log(text);
-}, 1000, 'does settimeout comes under inbuilt here?');
+}, 1000, 'whats up?');
 //unzip
 var unzip = function (zipped) {
     var unzipped = zipped[0].map(function (z) { return []; });

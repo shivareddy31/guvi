@@ -43,7 +43,7 @@ const bind = (fn, thisArg, ...partials)=> {
   }
   delay((text) => {
     console.log(text);
-  }, 1000, 'does settimeout comes under inbuilt here?');
+  }, 1000, 'whats up?');
 
 
   
